@@ -51,7 +51,7 @@
  '(ns-right-alternate-modifier (quote none))
  '(package-selected-packages
    (quote
-    (jedi expand-region multiple-cursors ialign command-log-mode buffer-move ace-window dashboard dracula-theme flycheck-pos-tip flycheck-posframe flycheck-popup-tip yasnippet-snippets company-jedi sr-speedbar helm yasnippet-classic-snippets use-package projectile nyan-mode irony-eldoc iedit ggtags flycheck-irony company-irony auto-complete-c-headers))))
+    (magit jedi expand-region multiple-cursors ialign command-log-mode buffer-move ace-window dashboard dracula-theme flycheck-pos-tip flycheck-posframe flycheck-popup-tip yasnippet-snippets company-jedi sr-speedbar helm yasnippet-classic-snippets use-package projectile nyan-mode irony-eldoc iedit ggtags flycheck-irony company-irony auto-complete-c-headers))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
