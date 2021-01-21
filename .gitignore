@@ -12,3 +12,5 @@ temp
 .mc-lists.el
 ac-comphist.dat
 transient
+anaconda-mode
+projectile.cache

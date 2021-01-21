@@ -1,7 +1,5 @@
-(use-package elpy
-  :ensure t
-  :init
-  (elpy-enable))
+(elpy-enable)
+(setq elpy-rpc-backend "jedi")
 
 ;; Enable Flycheck
 (when (require 'flycheck nil t)
