@@ -3,6 +3,7 @@
 
 (add-hook 'after-init-hook 'global-company-mode)
 (add-to-list 'company-backends 'company-semantic)
+(setq company-tooltip-align-annotations t)
 
 (defvar-local company-flycheck-popup-mode-on-p nil)
 
@@ -19,5 +20,8 @@
 (add-hook 'company-completion-started-hook 'company-turn-off-flycheck-popup)
 (add-hook 'company-completion-finished-hook 'company-maybe-turn-on-flycheck-popup)
 (add-hook 'company-completion-cancelled-hook 'company-maybe-turn-on-flycheck-popup)
+
+(require 'company-box)
+(add-hook 'company-mode-hook 'company-box-mode)
 
 (provide 'setup-company)
