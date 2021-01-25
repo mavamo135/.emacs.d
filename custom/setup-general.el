@@ -38,6 +38,11 @@
 
 ;; Set enabled color theme
 (load-theme 'dracula t)
+;; Customize dracula theme and enable it
+(custom-theme-set-faces
+ 'dracula
+ '(font-lock-variable-name-face ((t (:foreground "#8be9fd" :weight bold)))))
+(enable-theme 'dracula)
 
 ;; PACKAGE: projectile
 (use-package projectile
@@ -73,7 +78,7 @@
 (global-set-key (kbd "M-o") 'ace-window)
 
 ;; Configure font size
-(set-face-attribute 'default nil :height 150)
+(set-frame-font "Inconsolata 18" nil t)
 
 ;; PACKAGE: dashboard
 (require 'dashboard)
