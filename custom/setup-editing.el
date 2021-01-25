@@ -32,16 +32,8 @@
   :init
   (setq iedit-toggle-key-default nil))
 
-;; PACKAGE: whitespace
-;; Show characters that exceed the 80 column rule
-(require 'whitespace)
-(setq whitespace-line-column 80)
-(setq whitespace-style '(face lines-tail))
-(add-hook 'prog-mode-hook 'whitespace-mode)
-;; Show trailing whitespace
-(defun my-prog-mode-hook ()
-  (setq show-trailing-whitespace t))
-(add-hook 'prog-mode-hook #'my-prog-mode-hook)
+;; Show a ruler in the 80th column
+(add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
 
 ;; Enable display of line numbers in all programming modes
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
