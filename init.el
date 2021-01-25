@@ -29,6 +29,7 @@
 (add-to-list 'load-path custom-dir)
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/doxymacs")
 
+(require 'setup-packages)
 (require 'setup-general)
 (if (version< emacs-version "24.4")
   (require 'setup-ivy-counsel)
@@ -42,18 +43,3 @@
 (require 'setup-python)
 (require 'setup-yasnippet)
 (require 'doxymacs)
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ns-right-alternate-modifier 'none)
- '(package-selected-packages
-   '(elpy company-box company-anaconda anaconda-mode magit jedi expand-region multiple-cursors ialign command-log-mode buffer-move ace-window dashboard dracula-theme flycheck-pos-tip flycheck-posframe flycheck-popup-tip yasnippet-snippets company-jedi sr-speedbar helm yasnippet-classic-snippets use-package projectile nyan-mode irony-eldoc iedit ggtags flycheck-irony company-irony auto-complete-c-headers)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
