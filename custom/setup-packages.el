@@ -18,8 +18,10 @@
     multiple-cursors
     nyan-mode
     projectile
+    smartparens
     sr-speedbar
     use-package
+    visual-regexp
     yasnippet-snippets))
 
 ;; Scans the list in my-packages

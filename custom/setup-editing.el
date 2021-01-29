@@ -63,8 +63,17 @@
 (global-set-key [(shift return)] 'smart-open-line)
 (global-set-key [(control shift return)] 'smart-open-line-above)
 
+;; Enable interactive align using regexps
 (require 'ialign)
 (global-set-key (kbd "C-x a") #'ialign)
+
+(require 'smartparens-config)
+(add-hook 'prog-mode-hook #'smartparens-mode)
+
+(require 'visual-regexp)
+(define-key global-map (kbd "C-c r") 'vr/replace)
+(define-key global-map (kbd "C-c q") 'vr/query-replace)
+(define-key global-map (kbd "C-c m") 'vr/mc-mark)
 
 (require 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
