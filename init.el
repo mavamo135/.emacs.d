@@ -29,6 +29,10 @@
 (add-to-list 'load-path custom-dir)
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/doxymacs")
 
+;; Keep Emacs Custom-settings in a separate file
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file)
+
 (require 'setup-packages)
 (require 'setup-general)
 (if (version< emacs-version "24.4")

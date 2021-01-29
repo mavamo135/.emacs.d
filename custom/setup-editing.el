@@ -35,6 +35,9 @@
 ;; Show a ruler in the 80th column
 (add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
 
+;; Show matching pairs of parentheses in programming modes
+(add-hook 'prog-mode-hook #'show-paren-mode)
+
 ;; Enable display of line numbers in all programming modes
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 (set-face-attribute 'line-number-current-line nil :foreground "#f8f8f2")
