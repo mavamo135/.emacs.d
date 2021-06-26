@@ -8,8 +8,6 @@
 (add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode)
 ;; Activates CEDET's context menu that is bound to right mouse button
 (add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode)
-;; Activates mode when name of current tag will be shown in top line of buffer
-(add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
 ;; Activates use of separate styles for tags decoration (depending on tag's class)
 (add-to-list 'semantic-default-submodes 'global-semantic-decoration-mode)
 ;; Activates highlighting of local names that are the same as name of tag under cursor

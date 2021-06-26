@@ -7,6 +7,7 @@
     company-anaconda
     company-box
     dashboard
+    diff-hl
     dracula-theme
     expand-region
     flycheck-popup-tip
@@ -20,8 +21,11 @@
     projectile
     smartparens
     sr-speedbar
+    tree-sitter
+    tree-sitter-langs
     use-package
     visual-regexp
+    ws-butler
     yasnippet-snippets))
 
 ;; Scans the list in my-packages

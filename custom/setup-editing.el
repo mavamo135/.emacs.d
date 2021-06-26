@@ -67,9 +67,6 @@
 (require 'ialign)
 (global-set-key (kbd "C-x a") #'ialign)
 
-(require 'smartparens-config)
-(add-hook 'prog-mode-hook #'smartparens-mode)
-
 (require 'visual-regexp)
 (define-key global-map (kbd "C-c r") 'vr/replace)
 (define-key global-map (kbd "C-c q") 'vr/query-replace)
@@ -84,5 +81,10 @@
 
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
+
+(require 'ws-butler)
+(add-hook 'prog-mode-hook #'ws-butler-mode)
+
+(global-diff-hl-mode)
 
 (provide 'setup-editing)
