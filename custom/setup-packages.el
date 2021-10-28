@@ -9,6 +9,7 @@
     dashboard
     diff-hl
     dracula-theme
+    emmet-mode
     expand-region
     flycheck-popup-tip
     flycheck-posframe
@@ -19,12 +20,14 @@
     mood-line
     multiple-cursors
     projectile
+    rainbow-mode
     smartparens
     sr-speedbar
     tree-sitter
     tree-sitter-langs
     use-package
     visual-regexp
+    web-mode
     ws-butler
     yasnippet-snippets))
 

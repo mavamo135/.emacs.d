@@ -45,5 +45,6 @@
 (require 'setup-flycheck)
 (require 'setup-c)
 (require 'setup-python)
+(require 'setup-web)
 (require 'setup-yasnippet)
 (require 'doxymacs)
