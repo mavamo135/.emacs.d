@@ -7,7 +7,7 @@
   "Disable semantic-idle-summary in Python mode.
 Useful information can't be properly displayed when this mode is
 enabled since the minibuffer is cleared all the time."
-  (semantic-idle-summary-mode 0))
+  (global-semantic-idle-summary-mode 0))
 
 (add-hook 'python-mode-hook 'disable-semantic-idle-summary-mode t)
 

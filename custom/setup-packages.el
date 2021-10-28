@@ -16,8 +16,8 @@
     ialign
     iedit
     magit
+    mood-line
     multiple-cursors
-    nyan-mode
     projectile
     smartparens
     sr-speedbar

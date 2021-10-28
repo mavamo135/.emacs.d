@@ -29,9 +29,8 @@
 ;; Use right Alt for special keyboard characters
 (setq ns-right-alternate-modifier 'none)
 
-;; PACKAGE: Nyan Mode
-(require 'nyan-mode)
-(nyan-mode 1)
+(require 'mood-line)
+(mood-line-mode)
 
 ;; PACKAGE: sr-speedbar
 (require 'sr-speedbar)
