@@ -29,8 +29,7 @@
 ;; Use right Alt for special keyboard characters
 (setq ns-right-alternate-modifier 'none)
 
-(require 'mood-line)
-(mood-line-mode)
+(nano-modeline-mode)
 
 ;; PACKAGE: sr-speedbar
 (require 'sr-speedbar)
@@ -39,12 +38,8 @@
   (global-set-key (kbd "s-s") 'sr-speedbar-toggle))
 
 ;; Set enabled color theme
-(load-theme 'dracula t)
-;; Customize dracula theme and enable it
-(custom-theme-set-faces
- 'dracula
- '(font-lock-variable-name-face ((t (:foreground "#8be9fd" :weight bold)))))
-(enable-theme 'dracula)
+(load-theme 'nano-light t)
+(enable-theme 'nano-light)
 
 ;; PACKAGE: projectile
 (use-package projectile
@@ -80,7 +75,7 @@
 (global-set-key (kbd "M-o") 'ace-window)
 
 ;; Configure font size
-(set-frame-font "Inconsolata 18" nil t)
+(set-frame-font "RobotoMono Nerd Font 16" nil t)
 
 ;; PACKAGE: dashboard
 (require 'dashboard)

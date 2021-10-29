@@ -40,8 +40,8 @@
 
 ;; Enable display of line numbers in all programming modes
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
-(set-face-attribute 'line-number-current-line nil :foreground "#f8f8f2")
-(set-face-attribute 'line-number-current-line nil :background "#44475a")
+(set-face-attribute 'line-number-current-line nil :foreground "#37474F")
+(set-face-attribute 'line-number-current-line nil :background "#FAFAFA")
 (add-hook 'prog-mode-hook #'hl-line-mode)
 
 (defun smart-open-line ()

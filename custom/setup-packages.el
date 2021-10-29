@@ -8,7 +8,6 @@
     company-web
     dashboard
     diff-hl
-    dracula-theme
     emmet-mode
     expand-region
     flycheck-popup-tip
@@ -19,6 +18,8 @@
     magit
     mood-line
     multiple-cursors
+    nano-modeline
+    nano-theme
     projectile
     rainbow-mode
     smartparens
