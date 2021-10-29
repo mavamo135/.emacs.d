@@ -6,6 +6,7 @@
     command-log-mode
     company-anaconda
     company-box
+    company-web
     dashboard
     diff-hl
     dracula-theme
