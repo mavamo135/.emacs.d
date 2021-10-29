@@ -21,7 +21,4 @@
 (add-hook 'company-completion-finished-hook 'company-maybe-turn-on-flycheck-popup)
 (add-hook 'company-completion-cancelled-hook 'company-maybe-turn-on-flycheck-popup)
 
-(require 'company-box)
-(add-hook 'company-mode-hook 'company-box-mode)
-
 (provide 'setup-company)
